@@ -1,4 +1,4 @@
-package by.example.fundaments
+package by.example.fundamentals
 
 import org.junit.Test
 
