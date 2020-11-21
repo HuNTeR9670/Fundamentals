@@ -1,5 +1,6 @@
 package by.example.fundamentals
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -16,6 +17,8 @@ class MainActivity : AppCompatActivity() {
         binding.helloAndroidAcademyBTN.setOnClickListener {
             binding.helloWorldTV.text = getString(R.string.message)
             Toast.makeText(this, getString(R.string.message), Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, MovieDetailsActivity::class.java)
+            startActivity(intent)
         }
     }
 }
